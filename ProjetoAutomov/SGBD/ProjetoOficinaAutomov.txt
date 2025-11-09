@@ -1,0 +1,139 @@
+Projeto: Sistema de Gestão de Oficina Mecânica – “Oficina GP Motors”
+🎯 OBJETIVO
+ — Facilitar a gestão do dia a dia da oficina — 
+controlar clientes, veículos, ordens de serviço, peças e funcionários, com um painel simples e bonito.
+
+>>>>| Perfis de Usuário |<<<<
+1. Administrador (Dono da Oficina)
+ • Tem acesso total ao sistema.
+ • Pode gerenciar funcionários, clientes, veículos, peças e ordens de serviço.
+ • Pode ver relatórios e dashboards (lucro, serviços concluídos, peças mais usadas etc).
+
+2. Técnico / Mecânico
+ • Acesso limitado.
+ • Pode visualizar as ordens de serviço atribuídas a ele, marcar como em andamento ou concluída.
+ • Pode adicionar observações técnicas (ex: “trocado filtro de óleo”, “precisa de alinhamento”).
+ • Não pode editar clientes nem ver relatórios financeiros.
+
+3. Atendente / Recepcionista
+ • Pode cadastrar novos clientes e veículos.
+ • Pode abrir novas ordens de serviço, informando o problema relatado pelo cliente.
+ • Pode imprimir a OS e entregar ao cliente.
+ • Não tem acesso ao estoque nem relatórios.
+
+---------------------------------------------------------------------------------------------------------------------
+⚙️ Principais Funcionalidades
+🔹 1. Login e Controle de Acesso
+
+Tela de login separando os perfis: Administrador, Técnico, Atendente.
+Recuperação de senha (via e-mail opcional).
+
+🔹 2. Cadastro e Edição
+
+Clientes
+Cadastrar, editar, excluir, pesquisar.
+Campos: nome, CPF/CNPJ, telefone, endereço, e-mail, observações.
+
+Veículos
+Vinculado a um cliente.
+Campos: marca, modelo, placa, ano, cor, tipo de combustível.
+
+Usuários
+Criar novos usuários (técnicos e atendentes).
+Definir cargo (nível de acesso).
+Editar dados e redefinir senha.
+
+Peças
+Nome, código interno, quantidade, custo unitário, preço de venda, fornecedor.
+Atualização automática quando usada em uma OS.
+
+🔹 3. Ordens de Serviço (OS)
+
+Cadastro de OS com:
+Cliente, veículo, técnico responsável, descrição do problema.
+
+Data de entrada, prazo de entrega, valor estimado.
+
+Seleção de peças e serviços (com cálculo automático do total).
+
+Status: Aberta, Em andamento, Concluída, Entregue.
+
+Impressão da OS (PDF).
+
+Histórico de todas as OS com filtro por:
+Cliente
+Veículo
+Técnico
+Período
+
+🔹 4. Estoque de Peças
+
+Adicionar/editar/excluir peças.
+
+Controle automático de quantidade.
+
+Notificação visual de peças com estoque baixo.
+
+Histórico de movimentações (entrada/saída).
+
+🔹 5. Relatórios e Dashboard
+
+Total de OS abertas / concluídas no mês.
+
+Valor total de serviços realizados.
+
+Peças mais usadas.
+
+Clientes mais recorrentes.
+
+Lucro mensal (peças + mão de obra).
+
+Gráficos de barras e pizza (ex: Recharts ou Chart.js).
+
+🎨 Paleta de Cores e Estilo Visual
+
+Quero um painel limpo, moderno e profissional, nada poluído.
+
+🎨 Paleta sugerida:
+
+Azul petróleo: #1E3A5F (principal)
+
+Cinza escuro: #2E2E2E
+
+Cinza claro: #F2F4F7
+
+Laranja mecânico: #E67E22 (para botões e destaques)
+
+Branco: #FFFFFF
+
+✨ Estilo geral:
+
+Layout tipo dashboard (menu lateral fixo).
+
+Ícones minimalistas (Lucide ou Material Icons).
+
+Botões arredondados, sombras suaves.
+
+Fontes limpas, como Poppins ou Inter.
+
+Feedback visual em tudo (loading, sucesso, erro).
+
+📄 Extras Desejáveis
+
+Pesquisa rápida global (buscar cliente, OS ou veículo).
+
+Histórico de ações (log de quem fez o quê).
+
+Opção de exportar relatórios em PDF.
+
+Responsividade (usar em tablet na oficina).
+
+🧠 Resumo: o que eu quero gerenciar
+Categoria	O que quero fazer
+Clientes	Cadastrar, editar, buscar
+Veículos	Associar a clientes, cadastrar, editar
+Peças	Gerenciar estoque, alertas de falta
+Ordens de Serviço	Criar, editar, calcular total, acompanhar status
+Usuários	Controle de acesso (Admin, Técnico, Atendente)
+Relatórios	Financeiros, serviços concluídos, desempenho
+Dashboard	Visão geral da oficina em tempo real
